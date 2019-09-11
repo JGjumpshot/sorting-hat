@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'harrypotter';
+    src: url('../assets/HARRYP__.TTF');
+}
+
+@keyframes blurHat {
+    from {filter: blur(200px);}
+    to {filter: blur(0px);}
+}
+
+.text-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+}
+
+.text {
+    display: flex;
+    position: absolute;
+    color: rgb(219, 214, 170);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "harrypotter";
+    font-size: 10em;
+    animation: blurHat 4.5s;
+}
+
+.text2 {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    font-family: "harrypotter";
+    color: rgb(219, 214, 170);
+    position: absolute;
+    top: 506px;
+    font-size: 70px;
+    letter-spacing: 8px;
+    animation: blurHat 4.5s;
+}
+
+.img-container img {
+    height: 380px;
+    position: relative;
+    top: 3%;
+    animation: blurHat 4.5s;
+}
+
+.train img {
+    height: 166px;
+    /* display: block; */
+    position: relative;
+    top: 66%;
+    left: -236px;
+}
