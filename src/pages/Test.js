@@ -2,7 +2,7 @@ import React from 'react';
 
 function Test() {
     return(
-        <div>
+        <div style={{color: "white"}}>
             Hello world
         </div>
     )
