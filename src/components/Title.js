@@ -1,6 +1,6 @@
 import React from 'react';
 import './Title.css';
-import Hat from '../assets/sortinghat.png';
+import Hat from '../assets/sortinghatlogo.png';
 function Title () {
     return (
         <div className="text-wrapper">
