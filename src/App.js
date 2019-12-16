@@ -7,32 +7,29 @@ import ArrowButton from './components/ArrowButton';
 //import Test from './pages/Test';
 class App extends React.Component {
   constructor() {
-    super()
-    this.state = {
-        showMe:true
-    }
+    super();
+    this.state = {url: "/"}
   }
-  componentWillUnmount() {
-      this.setState({
-          showMe:!this.state.showMe
-      })
-  }
-
   render() {
     return (
       <Router>
         <div className="background">
-          <Route exact strict path="/" component={Title}></Route>
-          {
-            this.state.showMe ? <NavLink onClick={()=>this.componentWillUnmount()} className="button" exact strict to="/test" component={ArrowButton}>Let the sorting begin!</NavLink> : null
-          }
-                  
+        <Route exact path ="/" component={Title}/>
+        <NavLink to="/greatHall" >
+          <ArrowButton />
+        </NavLink>
+        <Route path="/greatHall" exact component={GreatHall}></Route>
         </div>
   
-      </Router>
+       </Router>
       
     );
   }
 }
-
+const GreatHall = () => {
+  return (
+  <div style={{color: "white", fontSize: "200px"}}>
+    <h1>Great Hall</h1>
+  </div>
+)}
 export default App;
