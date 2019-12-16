@@ -1,15 +1,16 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, NavLink} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './reset.css';
 import './App.css';
 import Title from './components/Title';
 import ArrowButton from './components/ArrowButton';
-//import Test from './pages/Test';
+import Test from './pages/Test';
 class App extends React.Component {
   constructor() {
     super();
     this.state = {url: "/"}
   }
+
   render() {
     return (
       <Router>
@@ -20,9 +21,7 @@ class App extends React.Component {
         </NavLink>
         <Route path="/greatHall" exact component={GreatHall}></Route>
         </div>
-  
        </Router>
-      
     );
   }
 }
