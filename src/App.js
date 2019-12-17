@@ -6,17 +6,27 @@ import './assets/sortinghat.png';
 import Title from './components/Title';
 import ArrowButton from './components/ArrowButton';
 
-function App() {
-  return (
-    <Router>
-      <div className="background">
-        <Route exact strict path="/" component={Title}></Route>
-        <Link className="button" exact strict to="/test" component={ArrowButton}>Let the sorting begin!</Link>
-      </div>
-
-    </Router>
-    
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isClicked: false
+    }
+    this.handleToggleClick = this.handleToggleClick.bind(this);
+  }
+  render() {
+    return (
+      <Router>
+        <div className="background">
+          <Route exact strict path="/" component={Title}></Route>
+          <Link className="button" exact strict to="/test" component={ArrowButton}>Let the sorting begin!</Link>
+        </div>
+  
+      </Router>
+      
+    )
+  }
+  
 }
 
 export default App;
