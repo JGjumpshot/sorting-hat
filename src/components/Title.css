@@ -30,7 +30,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "harrypotter";
-    font-size: 10em;
+    font-size: 144px;
     animation: blurHat 4.5s;
 }
 
@@ -42,15 +42,15 @@
     color: rgb(219, 214, 170);
     position: absolute;
     top: 506px;
-    font-size: 70px;
+    font-size: 72px;
     letter-spacing: 8px;
     animation: blurHat 4.5s;
 }
 
 .img-container img {
-    height: 380px;
+    height: 285px;
     position: relative;
-    top: 3%;
+    top: 6%;
     animation: blurHat 4.5s;
 }
 
