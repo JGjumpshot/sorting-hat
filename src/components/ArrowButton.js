@@ -2,28 +2,28 @@ import React from 'react';
 import './Button.css';
 class ArrowButton extends React.Component {
 
-    constructor() {
-        super();
-        this.state = {
-          isDisplayed: true
-        }
-      }
-    handleToggle(e) {
-        e.preventDefault();
-        this.setState({
-            isDisplayed: !this.state.isDisplayed
-        })
-    }
+    // constructor(props) {
+    //     super(props);
+    //     // this.state = {
+    //     //   isDisplayed: true
+    //     // }
+    //   }
+    // handleToggle(e) {
+    //     e.preventDefault();
+    //     this.setState({
+    //         isDisplayed: !this.state.isDisplayed
+    //     })
+    // }
 
     render() {
-        const {isDisplayed} = this.state;
+        // const {isDisplayed} = this.state;
         return (
             <div>
-                
-                <button onClick={(e) => this.handleToggle(e)} className="button" style={{display: isDisplayed ? 'inline-block' : 'none'}}>
+                <button className="button">
                     Let the sorting begin
                 </button>
-                
+                {/* onClick={(e) => this.handleToggle(e)}
+                style={{display: isDisplayed ? 'inline-block' : 'none'}}*/}
             </div>
         );
     }

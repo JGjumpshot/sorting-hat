@@ -11,9 +11,10 @@ class App extends React.Component {
     return (
       <Router>
         <div className="background">
+        <h1>{console.log(window.location.pathname)}</h1>
         <Route exact path ="/" component={Title}/>
         <Link to="/greatHall" >
-          <ArrowButton />
+          <ArrowButton isHome={true}/>
         </Link>
         <Route path="/greatHall" exact component={GreatHall}></Route>
         </div>
