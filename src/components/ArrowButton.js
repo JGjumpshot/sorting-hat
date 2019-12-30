@@ -14,12 +14,16 @@ class ArrowButton extends React.Component {
     //         isDisplayed: !this.state.isDisplayed
     //     })
     // }
-
+    handleToggle = () => {
+        document.getElementsByClassName('button').className = "hideButton";
+        console.log('working?')
+    }
     render() {
         // const {isDisplayed} = this.state;
         return (
             <div>
-                <button className="button">
+                <button className="button" onClick={this.handleToggle()}>
+                    {console.log(this.props)}
                     Let the sorting begin
                 </button>
                 {/* onClick={(e) => this.handleToggle(e)}
