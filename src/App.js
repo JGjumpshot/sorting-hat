@@ -4,8 +4,7 @@ import './reset.css';
 import './App.css';
 import Title from './components/Title';
 import "./components/Button.css";
-//import ArrowButton from './components/ArrowButton';
-//import Test from './pages/Test';
+import GreatHall from './components/GreatHall';
 class App extends React.Component {
   state = {
     isDisplayed: true
@@ -33,15 +32,13 @@ class App extends React.Component {
       );
     }
     return (
-      <h1>Hello world</h1>
+      <React.Fragment>
+        <div className="background">
+          <GreatHall />
+        </div>
+      </React.Fragment>
     );
   }
 }
-const GreatHall = () => {
-  return (
-  <div style={{color: "white", fontSize: "140px"}}>
-    <h1>Great Hall</h1>
-    {/* {document.getElementsByClassName('button').className = "hideButton"} */}
-  </div>
-)}
+
 export default App;

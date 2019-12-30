@@ -32,9 +32,7 @@
     font-size: 36px;
     animation: blurButton 4.5s;
 }
-.hideButton {
-    display: none;
-}
+
 .button:hover {
     color: white;
 }
