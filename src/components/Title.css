@@ -53,11 +53,3 @@
     top: 6%;
     animation: blurHat 4.5s;
 }
-
-.train img {
-    height: 166px;
-    /* display: block; */
-    position: relative;
-    top: 66%;
-    left: -236px;
-}
