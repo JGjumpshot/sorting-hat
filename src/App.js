@@ -14,7 +14,7 @@ class App extends React.Component {
     this.setState(() => ({
       isDisplayed: !this.state.isDisplayed
     }))
-    console.log(this.state.isDisplayed);
+    //  
   }
   
   render() {
