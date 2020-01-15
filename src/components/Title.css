@@ -48,8 +48,18 @@
 }
 
 .img-container img {
-    height: 285px;
+    height: 18.5em;
     position: relative;
     top: 6%;
     animation: blurHat 4.5s;
+}
+
+@media (min-width: 0px) and (max-width: 1001px) {
+    .img-container img {
+        height: 10em;
+    }
+    .text {
+        font-size: 70px;
+        top: 30%;
+    }
 }
