@@ -25,21 +25,25 @@ app.get('/api/sorting-hat', (req, res) => {
     
     var houses = ['Gryffindor', 'Slytherin', 'Ravenclaw', 'Hufflepuff'];
     // console.log(houses);
-    var sorted = Math.floor(Math.random() * houses.length);
-    //console.log(houses[sorted]);
-    res.send(
-        `Welcome to ${houses[sorted]}`
-    )
-    // switch(sorted) {
-    //     case 1:
-    //         res.send(`Welcome to Gryffindor!`);
-    //     case 2:
-    //         res.send(`Welcome to Slytherin`);
-    //     case 3:
-    //         res.send(`Welcome to Ravenclaw`);
-    //     case 4:
-    //         res.send(`Welcome to Hufflepuff`);
-    // }
+
+    var sorted = Math.floor(Math.random() * houses.length)
+    // console.log(houses[sorted]);
+    if (houses[sorted] === "Gryffindor") {
+        res.sendFile(
+            'index.html',
+            {root: __dirname}
+        )
+    }
+    else {
+        res.send(
+            `Welcome to ${houses[sorted]}`
+        )
+    }
+    
+    // res.sendFile(
+    //     'index.html',
+    //     {root: __dirname}
+    // )
 });
 
 // app.get('/api/myfile', (req, res) => {
