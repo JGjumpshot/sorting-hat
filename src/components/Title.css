@@ -48,7 +48,7 @@
 }
 
 .img-container img {
-    height: 285px;
+    height: 285px; /*18.5em*/
     position: relative;
     top: 6%;
     animation: blurHat 4.5s;
