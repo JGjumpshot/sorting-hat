@@ -27,9 +27,22 @@ app.get('/api/sorting-hat', (req, res) => {
     // console.log(houses);
     var sorted = Math.floor(Math.random() * houses.length)
     // console.log(houses[sorted]);
-    res.send(
-        `Welcome to ${houses[sorted]}`
-    )
+    if (houses[sorted] === "Gryffindor") {
+        res.sendFile(
+            'index.html',
+            {root: __dirname}
+        )
+    }
+    else {
+        res.send(
+            `Welcome to ${houses[sorted]}`
+        )
+    }
+    
+    // res.sendFile(
+    //     'index.html',
+    //     {root: __dirname}
+    // )
 });
 
 // app.get('api/myfile', (req, res) => {
