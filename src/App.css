@@ -1,3 +1,6 @@
+html {
+  overflow: hidden;
+}
 .background {
   width: 100vw;
   background-color: #232121;

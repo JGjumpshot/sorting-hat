@@ -1,37 +1,44 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './reset.css';
 import './App.css';
 import Title from './components/Title';
-import ArrowButton from './components/ArrowButton';
-//import Test from './pages/Test';
+import "./components/Button.css";
+import GreatHall from './components/GreatHall';
 class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      isGreatHall: false
-    };
+  state = {
+    isDisplayed: true
   }
+  handleClick = () => {
+    
+    this.setState(() => ({
+      isDisplayed: !this.state.isDisplayed
+    }))
+    //  
+  }
+  
   render() {
-    return (
-      <Router>
-        <div className="background">
-
-          <Route exact path="/" component={Title} />
-          <NavLink to="/greatHall" >
-            <ArrowButton isDisplayed={this.setState({isGreatHall: true})} />
-          </NavLink>
-          <Route path="/greatHall" exact component={GreatHall}></Route>
-        </div>
+    if(this.state.isDisplayed === true) {
+      return(
+        <Router>
+          <div className="background"></div>
+          <Title />
+          <Link to="/greatHall" >
+            <button className="button" onClick={this.handleClick}>Let the sorting begin</button>
+            {/* <ArrowButton isHome={true}/> */}
+          </Link>
+        <Route path="/greatHall" exact component={GreatHall}/>
       </Router>
+      );
+    }
+    return (
+      <React.Fragment>
+        <div className="background">
+          <GreatHall />
+        </div>
+      </React.Fragment>
     );
   }
 }
-const GreatHall = () => {
-  return (
-    <div style={{ color: "white", fontSize: "200px" }}>
-      <h1>Great Hall</h1>
-    </div>
-  )
-}
+
 export default App;

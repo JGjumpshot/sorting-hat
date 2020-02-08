@@ -48,16 +48,22 @@
 }
 
 .img-container img {
-    height: 285px;
+    height: 18.5em;
     position: relative;
     top: 6%;
     animation: blurHat 4.5s;
 }
 
-.train img {
-    height: 166px;
-    /* display: block; */
-    position: relative;
-    top: 66%;
-    left: -236px;
+@media (min-width: 0px) and (max-width: 1001px) {
+    .img-container img {
+        height: 10em;
+    }
+    .text {
+        font-size: 70px;
+        top: 30%;
+    }
+    .text2 {
+        font-size: 25px;
+        top: 287px;
+    }
 }

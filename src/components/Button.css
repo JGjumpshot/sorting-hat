@@ -32,6 +32,18 @@
     font-size: 36px;
     animation: blurButton 4.5s;
 }
+
 .button:hover {
     color: white;
+}
+
+@media (min-width: 0px) and (max-width: 1001px) {
+    .button {
+        font-size: 20px;
+        top: 39%;
+        left: 39%;
+    }
+    .button:hover {
+        color: white;
+    }
 }
