@@ -8,28 +8,30 @@ import ArrowButton from './components/ArrowButton';
 class App extends React.Component {
   constructor() {
     super();
-    this.state = {url: "/"}
+    this.state = {
+      isGreatHall: false
+    };
   }
-
   render() {
     return (
       <Router>
         <div className="background">
 
-        <Route exact path ="/" component={Title}/>
-        <NavLink to="/greatHall" >
-          <ArrowButton />
-        </NavLink>
-        <Route path="/greatHall" exact component={GreatHall}></Route>
+          <Route exact path="/" component={Title} />
+          <NavLink to="/greatHall" >
+            <ArrowButton isDisplayed={this.setState({isGreatHall: true})} />
+          </NavLink>
+          <Route path="/greatHall" exact component={GreatHall}></Route>
         </div>
-       </Router>
+      </Router>
     );
   }
 }
 const GreatHall = () => {
   return (
-  <div style={{color: "white", fontSize: "200px"}}>
-    <h1>Great Hall</h1>
-  </div>
-)}
+    <div style={{ color: "white", fontSize: "200px" }}>
+      <h1>Great Hall</h1>
+    </div>
+  )
+}
 export default App;

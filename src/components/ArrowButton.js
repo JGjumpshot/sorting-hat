@@ -1,8 +1,6 @@
 import React from 'react';
 import './Button.css';
 class ArrowButton extends React.Component {
-
-
     render() {
         return (
             <div>
@@ -16,5 +14,6 @@ class ArrowButton extends React.Component {
     }
     
 }
+
 
 export default ArrowButton;
