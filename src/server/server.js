@@ -30,7 +30,19 @@ app.get('/api/sorting-hat', (req, res) => {
     // console.log(houses[sorted]);
     if (houses[sorted] === "Gryffindor") {
         res.sendFile(
-            'index.html',
+            'gryffindor.html',
+            {root: __dirname}
+        )
+    }
+    else if (houses[sorted] === "Slytherin") {
+        res.sendFile(
+            'slytherin.html',
+            {root: __dirname}
+        )
+    }
+    else if (houses[sorted] === "Hufflepuff") {
+        res.sendFile(
+            'hufflepuff.html',
             {root: __dirname}
         )
     }
