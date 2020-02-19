@@ -11,7 +11,7 @@ app.get('/api/hello', (req, res) => {
 });
 
 app.post('/api/world', (req, res) => {
-    console.log(req.body);
+    // console.log(req.body);
     res.send(
         `I received your POST request. This is what you sent me: ${JSON.stringify(req.body)}`,
     )
@@ -25,11 +25,24 @@ app.get('/api/sorting-hat', (req, res) => {
     
     var houses = ['Gryffindor', 'Slytherin', 'Ravenclaw', 'Hufflepuff'];
     // console.log(houses);
+
     var sorted = Math.floor(Math.random() * houses.length)
     // console.log(houses[sorted]);
     if (houses[sorted] === "Gryffindor") {
         res.sendFile(
-            'index.html',
+            'gryffindor.html',
+            {root: __dirname}
+        )
+    }
+    else if (houses[sorted] === "Slytherin") {
+        res.sendFile(
+            'slytherin.html',
+            {root: __dirname}
+        )
+    }
+    else if (houses[sorted] === "Hufflepuff") {
+        res.sendFile(
+            'hufflepuff.html',
             {root: __dirname}
         )
     }
@@ -45,10 +58,10 @@ app.get('/api/sorting-hat', (req, res) => {
     // )
 });
 
-// app.get('api/myfile', (req, res) => {
+// app.get('/api/myfile', (req, res) => {
 //     console.log(__dirname);
-//     res.send("Hello Jackson")
-//     // res.sendFile(path.join(__dirname + '/index.html'));
+//     // res.send("Hello Jackson");
+//     res.sendFile(path.join(__dirname + '/index.html'));
 // })
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
