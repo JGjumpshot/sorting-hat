@@ -1,8 +1,9 @@
 @font-face {
     font-family: 'harrypotter';
-    src: url('../../assets/HARRYP__.TTF');
+    src: url("../../assets/HARRYP__.TTF");
 }
 
 h1 {
-    font-family: monospace;
+    font-family: harrypotter;
+    color: blue;
 }
