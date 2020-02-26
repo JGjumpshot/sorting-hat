@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import './reset.css';
 import './App.css';
 import Title from './components/Title';
@@ -14,9 +14,8 @@ class App extends React.Component {
     this.setState(() => ({
       isDisplayed: !this.state.isDisplayed
     }))
-    //  
   }
-  
+
   render() {
     if(this.state.isDisplayed === true) {
       return(

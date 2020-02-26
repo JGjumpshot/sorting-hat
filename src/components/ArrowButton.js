@@ -1,8 +1,7 @@
 import React from 'react';
 import './Button.css';
+import {useHistory} from 'react-router-dom';
 class ArrowButton extends React.Component {
-<<<<<<< HEAD
-=======
 
     // constructor(props) {
     //     super(props);
@@ -20,7 +19,6 @@ class ArrowButton extends React.Component {
         document.getElementsByClassName('button').className = "hideButton";
         console.log('working?')
     }
->>>>>>> bd16ec4d024c4691964c21999760874a3c7fb017
     render() {
         // const {isDisplayed} = this.state;
         return (
