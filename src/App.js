@@ -6,18 +6,19 @@ import Title from './components/Title';
 import "./components/Button.css";
 import GreatHall from './components/GreatHall';
 class App extends React.Component {
-  state = {
-    isDisplayed: true
-  }
+  // state = {
+  //   isDisplayed: true
+  // }
   handleClick = () => {
     
-    this.setState(() => ({
-      isDisplayed: !this.state.isDisplayed
-    }))
+    // this.setState(() => ({
+    //   isDisplayed: !this.state.isDisplayed
+    // }))
+    this.props.history.match("/greatHall");
   }
 
   render() {
-    if(this.state.isDisplayed === true) {
+    //if(this.state.isDisplayed === true) {
       return(
         <Router>
           <div className="background"></div>
@@ -29,14 +30,14 @@ class App extends React.Component {
         <Route path="/greatHall" exact component={GreatHall}/>
       </Router>
       );
-    }
-    return (
-      <React.Fragment>
-        <div className="background">
-          <GreatHall />
-        </div>
-      </React.Fragment>
-    );
+    
+    // return (
+    //   <React.Fragment>
+    //     <div className="background">
+    //       <GreatHall />
+    //     </div>
+    //   </React.Fragment>
+    // );
   }
 }
 
