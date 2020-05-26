@@ -7,28 +7,25 @@ import "./components/Button.css";
 //import GreatHall from './components/GreatHall';
 import ArrowButton from './components/ArrowButton';
 import history from './history.js';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routes from './routes';
 
 class App extends React.Component {
 
   render(props) {
     //if(this.state.isDisplayed === true) {
       return(
-        <div>
-          <div className="background"></div>
-          <Title />
-          <ArrowButton onClick={ () => {
-            history.push('/GreatHall')
-          } } />
-        </div>
+        <Router>
+          <div>
+            <Routes />
+            <div className="background"></div>
+            <Title />
+            <ArrowButton onClick={ () => {
+              history.push('/GreatHall')
+            } } />
+          </div>
+        </Router>
       );
-    
-    // return (
-    //   <React.Fragment>
-    //     <div className="background">
-    //       <GreatHall />
-    //     </div>
-    //   </React.Fragment>
-    // );
   }
 }
 
