@@ -1,34 +1,25 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
+//import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import './reset.css';
 import './App.css';
 import Title from './components/Title';
 import "./components/Button.css";
-import GreatHall from './components/GreatHall';
-class App extends React.Component {
-  // state = {
-  //   isDisplayed: true
-  // }
-  handleClick = () => {
-    
-    // this.setState(() => ({
-    //   isDisplayed: !this.state.isDisplayed
-    // }))
-    this.props.history.match("/greatHall");
-  }
+//import GreatHall from './components/GreatHall';
+import ArrowButton from './components/ArrowButton';
+import history from './history.js';
 
-  render() {
+class App extends React.Component {
+
+  render(props) {
     //if(this.state.isDisplayed === true) {
       return(
-        <Router>
+        <div>
           <div className="background"></div>
           <Title />
-          <Link to="/greatHall" >
-            <button className="button" onClick={this.handleClick}>Let the sorting begin</button>
-            {/* <ArrowButton isHome={true}/> */}
-          </Link>
-        <Route path="/greatHall" exact component={GreatHall}/>
-      </Router>
+          <ArrowButton onClick={ () => {
+            history.push('/GreatHall')
+          } } />
+        </div>
       );
     
     // return (
