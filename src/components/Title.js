@@ -1,6 +1,9 @@
 import React from 'react';
 import './Title.css';
 import Hat from '../assets/sortinghatlogo.png';
+import ArrowButton from './ArrowButton';
+import history from '../history.js';
+
 function Title () {
     return (
         <div className="text-wrapper">
@@ -9,6 +12,9 @@ function Title () {
             <div className="img-container">
                 <img src={Hat} alt="sorting hat"/>
             </div>
+            <ArrowButton onClick={ () => {
+              history.push('/GreatHall')
+            } } />
         </div>
     );
 }
