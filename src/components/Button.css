@@ -30,7 +30,7 @@
     border: 2px solid;
     font-family: harrypotter;
     font-size: 36px;
-    animation: blurButton 4.5s;
+    /* animation: blurButton 3.25s; */
 }
 
 .button:hover {

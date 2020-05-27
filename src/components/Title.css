@@ -31,7 +31,7 @@
     transform: translate(-50%, -50%);
     font-family: "harrypotter";
     font-size: 144px;
-    animation: blurHat 4.5s;
+    /* animation: blurHat 3.25s; */
 }
 
 .text2 {
@@ -44,14 +44,14 @@
     top: 506px;
     font-size: 72px;
     letter-spacing: 8px;
-    animation: blurHat 4.5s;
+    /* animation: blurHat 3.25s; */
 }
 
 .img-container img {
     height: 18.5em;
     position: relative;
     top: 6%;
-    animation: blurHat 4.5s;
+    /* animation: blurHat 3.25s; */
 }
 
 @media (min-width: 0px) and (max-width: 1001px) {

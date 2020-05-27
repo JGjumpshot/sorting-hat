@@ -1,8 +1,7 @@
 import React from 'react';
 import './GreatHall.css';
 
-class GreatHall extends React.Component {
-  render(props) {
+function GreatHall() {
     return (
       <div>
           <div className="gold-svg"></div>
@@ -12,7 +11,6 @@ class GreatHall extends React.Component {
           <button className="button-two">Discover House</button>
       </div>
     );
-  }
 }
 
 export default GreatHall;
