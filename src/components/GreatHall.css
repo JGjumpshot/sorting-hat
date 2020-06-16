@@ -14,6 +14,7 @@
     width: 263.1px;
     height: 346.26px;
     background: url("../assets/hogwartsLogo.svg");
+    background-repeat: no-repeat;
     position: absolute;
     left: 74.39%;
     right: 12.91%;
@@ -26,8 +27,8 @@
     position: absolute;
     width: 1088.63px;
     height: 566.59px;
-    left: 997px;
-    top: 457px; /*540*/
+    left: 52vw;
+    top: 43vh; /*540*/
 }
 .sorting-text {
     position: absolute;
@@ -50,7 +51,7 @@
     position: absolute;
     top: 59vh;
     left: 37vw;
-    background-color: #232121;
+    background-color: black;
     border: none;
     color:rgb(219, 214, 170);
     padding: 16px 32px;
@@ -70,4 +71,10 @@
 
 .button-two:hover {
     color: white;
+}
+
+@media screen and (min-width: 400px) {
+    .castle {
+        /* position: relative; */
+    }
 }
