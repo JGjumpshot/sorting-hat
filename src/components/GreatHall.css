@@ -50,7 +50,7 @@
     position: absolute;
     top: 59vh;
     left: 37vw;
-    background-color: #232121;
+    background-color: #000000;
     border: none;
     color:rgb(219, 214, 170);
     padding: 16px 32px;
@@ -70,4 +70,5 @@
 
 .button-two:hover {
     color: white;
+    background-color: #231231;
 }
