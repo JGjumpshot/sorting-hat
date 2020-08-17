@@ -19,7 +19,8 @@
     left: 74.39%;
     right: 12.91%;
     top: 11.96%;
-    bottom: 49.98%;   
+    bottom: 49.98%;
+    z-index: 2;   
 }
 .castle {
     background: url("../assets/Castle.svg");

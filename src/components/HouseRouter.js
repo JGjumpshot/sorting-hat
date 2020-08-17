@@ -20,7 +20,7 @@ function pickHouse() {
 
 function HouseRouter() {
     return (
-        <div style={{"color": "white", "font-family": "monospace", "font-size": "200px"}}>
+        <div>
             {pickHouse()}
         </div>
     )
