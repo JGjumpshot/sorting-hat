@@ -1,7 +1,26 @@
+@font-face {
+    font-family: 'harrypotter';
+    src: url('../../assets/HARRYP__.TTF');
+}
+
+@keyframes blurHouseText {
+    from {filter: blur(30px);}
+    to {filter: blur(0px);}
+}
+
 .house-styles {
-    font-size: 200px;
-    font-family: monospace;
-    color: #444;
+    font-size: 65px;
+    font-family: harrypotter;
+    color: rgb(227, 230, 61);
+    position: absolute;
+    left: 1.5em;
+    bottom: 10em;
+}
+
+.house-text {
+    font-size: 80px;
+    /* font-weight: bolder; */
+    animation: blurHouseText 3.0s;
 }
 
 .gold-svg {
