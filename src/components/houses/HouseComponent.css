@@ -1,0 +1,23 @@
+.house-styles {
+    font-size: 200px;
+    font-family: monospace;
+    color: #444;
+}
+
+.gold-svg {
+    width: 100vw;
+    height: 100vh;
+    margin-left: 58vw;
+    background: url("../../assets/goldOutline.svg");
+    background-repeat: no-repeat;
+}
+
+.castle {
+    background: url("../../assets/Castle.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 1088.63px;
+    height: 566.59px;
+    left: 52vw;
+    top: 43vh; /*540*/
+}
