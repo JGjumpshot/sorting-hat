@@ -1,5 +1,6 @@
 import React from 'react';
 import './GreatHall.css';
+import { Link } from 'react-router-dom';
 
 function GreatHall() {
     return (
@@ -8,7 +9,7 @@ function GreatHall() {
           <div className="hogwarts-crest"></div>
           <div className="castle"></div>
           <div className="sorting-text">Are you Brave of heart? <br />&nbsp;&nbsp;Cunning and Ambitious? <br /> Loyal and Dedicated? <br /> &nbsp;&nbsp;Or Clever and Creative? <br /> <br /> Click to find out your house</div>
-          <button className="button-two">Discover House</button>
+          <Link to="House" className="button-two">Discover House</Link>
       </div>
     );
 }
