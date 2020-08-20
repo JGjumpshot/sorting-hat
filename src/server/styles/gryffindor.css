@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'harrypotter';
-    src: url("../../assets/HARRYP__.TTF");
-}
-
-h1 {
-    font-family: harrypotter;
-    color: blue;
-}
