@@ -19,7 +19,8 @@
     left: 74.39%;
     right: 12.91%;
     top: 11.96%;
-    bottom: 49.98%;   
+    bottom: 49.98%;
+    z-index: 2;   
 }
 .castle {
     background: url("../assets/Castle.svg");
@@ -51,7 +52,7 @@
     position: absolute;
     top: 59vh;
     left: 37vw;
-    background-color: black;
+    background-color: #000000;
     border: none;
     color:rgb(219, 214, 170);
     padding: 16px 32px;

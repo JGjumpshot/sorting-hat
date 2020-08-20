@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-
 //import history from './history';
 import Title from "./components/Title.js";
 import GreatHall from './components/GreatHall.js';
-import House from './components/House.js';
+import HouseRouter from './components/HouseRouter.js';
 export default class Routes extends Component {
     render() {
         return (
@@ -12,7 +11,7 @@ export default class Routes extends Component {
                 <Switch>
                     <Route exact path="/" component={Title} />
                     <Route path="/GreatHall" component={GreatHall} />
-                    <Route path="/api/sorting-hat" component={House} />
+                    <Route path="/HouseRouter" component={HouseRouter} />
                 </Switch>
             
         )
