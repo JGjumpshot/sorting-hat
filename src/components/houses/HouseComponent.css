@@ -54,3 +54,15 @@
     bottom: 49.98%;
     z-index: 2;   
 }
+
+.slytherin-logo {
+    width: 768.1px;
+    height: 524.26px;
+    background: url("../../assets/slytherin-logo.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 75%;
+    top: 6.96%;
+    z-index: 2;
+    filter: drop-shadow(17px 12px 10px #000);   
+}

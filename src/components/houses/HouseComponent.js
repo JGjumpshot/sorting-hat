@@ -13,7 +13,7 @@ function HouseComponent(props) {
                 return <div className="gryffindor-logo"></div>
             case "Slytherin":
                 house = "Slytherin";
-                return <div className="gryffindor-logo"></div>
+                return <div className="slytherin-logo"></div>
             case "Ravenclaw":
                 house = "Ravenclaw";
                 return <div className="gryffindor-logo"></div>
