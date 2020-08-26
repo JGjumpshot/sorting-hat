@@ -29,6 +29,7 @@ function HouseComponent(props) {
             {/* <div className="house-styles">{props.house}</div> */}
             {houseConditional(house)}
             <div className="castle"></div>
+            <div className="button"></div>
         </div>
     )
 }

@@ -3,7 +3,7 @@
     src: url('../../assets/HARRYP__.TTF');
 }
 
-@keyframes blurHouseText {
+@keyframes blurAction {
     from {filter: blur(22px);}
     to {filter: blur(0px);}
 }
@@ -21,7 +21,7 @@
     font-size: 120px;
     /* font-weight: bolder; */
     vertical-align: middle;
-    animation: blurHouseText 3.0s;
+    animation: blurAction 3.0s;
 }
 
 .gold-svg {
@@ -40,6 +40,17 @@
     height: 566.59px;
     left: 52vw;
     top: 43vh; /*540*/
+}
+
+.button {
+    background: url("../../assets/button.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 140px;
+    width: 638px;
+    left: 0em;
+    border: none;
+    animation: blurAction 2.0s;
 }
 
 .gryffindor-logo {
@@ -64,5 +75,19 @@
     left: 75%;
     top: 6.96%;
     z-index: 2;
-    filter: drop-shadow(17px 12px 10px #000);   
+    filter: drop-shadow(17px 12px 10px #000);
+    animation: blurAction 2.0s;
 }
+
+/* .hufflepuff-logo {
+    width: 768.1px;
+    height: 524.26px;
+    background: url("../../assets/hufflepuff-logo.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 75%;
+    top: 6.96%;
+    z-index: 2;
+    filter: drop-shadow(17px 12px 10px #000);
+    animation: blurAction 2.0s;   
+} */
