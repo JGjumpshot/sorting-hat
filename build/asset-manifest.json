@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/sorting-hat/static/css/main.0ddc516b.chunk.css",
+    "main.js": "/sorting-hat/static/js/main.11cb5c5f.chunk.js",
+    "main.js.map": "/sorting-hat/static/js/main.11cb5c5f.chunk.js.map",
+    "runtime-main.js": "/sorting-hat/static/js/runtime-main.c6027a19.js",
+    "runtime-main.js.map": "/sorting-hat/static/js/runtime-main.c6027a19.js.map",
+    "static/js/2.600cb0cb.chunk.js": "/sorting-hat/static/js/2.600cb0cb.chunk.js",
+    "static/js/2.600cb0cb.chunk.js.map": "/sorting-hat/static/js/2.600cb0cb.chunk.js.map",
+    "index.html": "/sorting-hat/index.html",
+    "precache-manifest.164eb6759f9521f8968a77fa67354b2d.js": "/sorting-hat/precache-manifest.164eb6759f9521f8968a77fa67354b2d.js",
+    "service-worker.js": "/sorting-hat/service-worker.js",
+    "static/css/main.0ddc516b.chunk.css.map": "/sorting-hat/static/css/main.0ddc516b.chunk.css.map",
+    "static/js/2.600cb0cb.chunk.js.LICENSE.txt": "/sorting-hat/static/js/2.600cb0cb.chunk.js.LICENSE.txt",
+    "static/media/HouseComponent.css": "/sorting-hat/static/media/slytherin-logo.e3eb53cb.png",
+    "static/media/GreatHall.css": "/sorting-hat/static/media/hogwartsLogo.e9b862e1.svg",
+    "static/media/sortinghatlogo.png": "/sorting-hat/static/media/sortinghatlogo.e111b1a3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c6027a19.js",
+    "static/js/2.600cb0cb.chunk.js",
+    "static/css/main.0ddc516b.chunk.css",
+    "static/js/main.11cb5c5f.chunk.js"
+  ]
+}

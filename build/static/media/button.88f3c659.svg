@@ -1,0 +1,16 @@
+<svg width="700" height="148" viewBox="0 0 700 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M655.5 73.5C595.9 73.5 581.997 24.8333 582.497 0.5H118.999C119.499 24.8333 105.599 73.5 45.9986 73.5" stroke="#FBE753"/>
+<path d="M654.501 74C594.901 74 580.999 122.667 581.499 147H118C118.5 122.667 104.6 74 45.0001 74" stroke="#FBE753"/>
+<circle cx="38" cy="8" r="7" fill="#DCCF8D"/>
+<circle cx="38" cy="8" r="6.5" stroke="black" stroke-opacity="0.3"/>
+<circle cx="662" cy="140" r="7" transform="rotate(180 662 140)" fill="#DCCF8D"/>
+<circle cx="662" cy="140" r="6.5" transform="rotate(180 662 140)" stroke="black" stroke-opacity="0.3"/>
+<circle cx="21" cy="15" r="7" fill="#DCCF8D"/>
+<circle cx="21" cy="15" r="6.5" stroke="black" stroke-opacity="0.3"/>
+<circle cx="679" cy="133" r="7" transform="rotate(180 679 133)" fill="#DCCF8D"/>
+<circle cx="679" cy="133" r="6.5" transform="rotate(180 679 133)" stroke="black" stroke-opacity="0.3"/>
+<circle cx="7" cy="29" r="7" fill="#DCCF8D"/>
+<circle cx="7" cy="29" r="6.5" stroke="black" stroke-opacity="0.3"/>
+<circle cx="693" cy="119" r="7" transform="rotate(180 693 119)" fill="#DCCF8D"/>
+<circle cx="693" cy="119" r="6.5" transform="rotate(180 693 119)" stroke="black" stroke-opacity="0.3"/>
+</svg>
